@@ -13,15 +13,10 @@ export const Button = styled.button<Props>`
 
   margin-bottom: 8px;
   
-  background-color: ${ (props) => props.isHome ? 'var(--rocketseat)' : 'var(--primary)' };
+  background-color: ${ (props) => props.isHome ? 'var(--first)' : 'var(--primary)' };
 
   position: relative;
   cursor: pointer;
-
-  > img {
-    width: 24px;
-    height: 24px;
-  }
 
   /* Bolinha branca da esquerda que define se a pessoa tem notificações */
   /* Hash de CSS  -> O exemplo abaixo mostra a estilização de um pseudo element*/
@@ -72,6 +67,6 @@ export const Button = styled.button<Props>`
   /* Transição para mudança de estilo ao passar o cursor no elemento */
   &.active, &:hover {
     border-radius: 16px;
-    background-color: ${props => props.isHome ? 'var(--rocketseat)' : 'var(--discord)'}
+    background-color: ${props => props.isHome ? 'var(--first)' : 'var(--discord)'}
   }
 `;

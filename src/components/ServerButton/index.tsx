@@ -1,6 +1,6 @@
 import React from 'react';
+import { Waves } from 'styled-icons/material';
 import { Button } from './styles';
-const Logo = '../../assets/Logo.svg';
 
 export interface Props {
   selected?: boolean;
@@ -22,7 +22,7 @@ const ServerButton: React.FC<Props> = ({
       mentions={mentions}
       className={selected ? 'active' : ''}
     >
-      {isHome && <img src={Logo} alt='Rocketseat' />}
+      {isHome && <Waves style={{ width: 30, height: 30 }} color='#FFF' />}
     </Button>
   );
 }
